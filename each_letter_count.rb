@@ -6,22 +6,9 @@
 
 p "Enter a word:"
 
-#puts user_word = gets.chomp.split("")
-p user_word = gets.chomp.split("")
+ user_word = gets.chomp.split("")
 
+ user_word.each do |letter|
+  p "#{letter} appears #{user_word.count(letter)} times"
 
-
-#p user_word = gets.to_i
-
-
-
-#user_word.each_with_index do |the_letter, the_index|
- # p the_letter.count
-
-#end
-
-#"Enter a word"
-
-
-#p user_word
-#"#{} appears #{} times"
+end
